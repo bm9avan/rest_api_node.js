@@ -33,10 +33,6 @@ To use the API:
 
 3. For POST requests, make requests via Postman or visit the link provided above for seamless integration with the React frontend project.
 
-## Configuration
-
-You can configure the API settings in the `config.js` file, such as the port number and database connection.
-
 ## Technologies Used
 
 - Node.js
@@ -44,6 +40,7 @@ You can configure the API settings in the `config.js` file, such as the port num
 - MongoDB
 - Postman (for testing)
 - React (for frontend integration)
+- Vercel (for hosting https://youtu.be/eXAYkk99TaY?si=yoDSyQRGbFB_9mRS)
 
 ## Contributing
 
