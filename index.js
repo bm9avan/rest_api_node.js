@@ -12,13 +12,13 @@ mongoose.connect(process.env.MONGO_URI);
 
 app.get("/get", (req, res) => {
   jobs.find({}).then((j) => {
-    res.json(j);
+    return res.json(j);
   });
 });
 
 app.post("/post", (req, res) => {
   jobs.create(req.body);
-  res.json({ sucess: "job added sucessfuly" });
+  return res.json({ sucess: "job added sucessfuly" });
 });
 
 app.get("/get/:q", (req, res) => {
@@ -41,7 +41,7 @@ app.get("/get/:q", (req, res) => {
       },
     ])
     .then((j) => {
-      res.json(j);
+      return res.json(j);
     });
 });
 
