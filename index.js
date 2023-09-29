@@ -10,6 +10,11 @@ app.use(express.static(path.join(__dirname + "/html")));
 
 mongoose.connect(process.env.MONGO_URI);
 
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    next();
+});
+
 app.get("/get", (req, res) => {
   jobs.find({}).then((j) => {
     return res.json(j);
