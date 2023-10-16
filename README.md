@@ -9,7 +9,7 @@ This Node.js REST API provides access to job data, supports specific searches wi
 
 - Visit this endpoint to access job data.
 
-### GET /get?q
+### GET /get/q
 
 - Use this endpoint to perform specific searches within the job listings.
 
